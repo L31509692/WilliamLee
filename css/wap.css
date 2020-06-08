@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; font-family:"微软雅黑";}
+a{ text-decoration:none;}
+.cle{ clear:both;}
+ul li{ list-style:none;}
+.border-bottom{ border-bottom:1px solid #CCC;}
+.border-top{ border-top:1px solid #CCC;}
+.border-right{ border-right:1px solid #CCC;}
+.border-left{ border-left:1px solid #CCC;}
+.relative{ position:relative}
+.absolute{ position:absolute;}
+img{ border:none; display:block}
+
+.wapper{ width:100%; min-width:320px; max-width:750px; margin:0 auto;}
+.wapper p{ padding:0px; margin:0px;}
+.wapper img{ width:100%}
+.center{ padding:5px; height:auto;}
+.other{ width:100%; height:auto;}

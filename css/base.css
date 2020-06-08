@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+/*cssreset*/blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,th,ul{margin:0;padding:0;}
+body,button,input,select,textarea{font:14px/1.5 tahoma,arial,'微软雅黑';}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;}
+address,cite,dfn,em,var,i{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:14px;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+ol,ul{list-style:none;}
+a{text-decoration:none;color:#181816;display:block;}
+a:hover{text-decoration:none;}
+fieldset,img{border:0;vertical-align:top;}
+textarea{resize:none;}
+a,input,button,select,textarea{outline:none;}
+a,button{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;}
+/*清除浮动*/
+.clearfix:before,.clearfix:after{display:table;content:"";}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+/*公共样式*/
+.fl{float:left;}
+.fr{float:right;}
+.over_f{overflow:hidden;}
+.w_100{width:100%;margin:0 auto;}
+span{display:block;}
+.weixin_box{max-width:750px; margin:0 auto;}
+.weixin_box .box_01{width:100%; background:#fff;}
+.weixin_box .box_01 .list{}
+.weixin_box .box_01 .list .icon{/*width:0.66rem; height:0.55rem; margin:0 0.1rem 0 0;*/}
+.weixin_box .box_01 .list .icon img{width:100%;}
+.weixin_box .box_01 .list .txt{/*color:#4c4c4c; font-size:0.4rem; line-height:0.55rem;*/ }
+.weixin_box .box_01 .list .txt span{font-weight:bold; display:inline;color: #fff;}
+.weixin_box .box_01 .btn{margin:0 auto 0.03rem; display:block;}
+.weixin_box .box_01 .btn img{width:100%;}
+.weixin_box .box_01 p{text-align:center; font-size:0.22rem; color:#4b4b4b; font-weight:bold;}
+
+
+.weixin_box .box_02{width:100%;}
+.weixin_box .box_02 .list{/*padding:0 0 0.13rem 1.3rem;*/}
+.weixin_box .box_02 .list .icon{/*width:0.66rem; height:0.55rem; margin:0 0.1rem 0 0;*/}
+.weixin_box .box_02 .list .icon img{width:100%;}
+.weixin_box .box_02 .list .txt{/*color:#4c4c4c; font-size:0.4rem; line-height:0.55rem; */}
+.weixin_box .box_02 .list .txt span{font-weight:bold; display:inline;color:#fff}
+.weixin_box .box_02 .btn{margin:0 auto 0.03rem; display:block;}
+.weixin_box .box_02 .btn img{width:100%;}
+.weixin_box .box_02 p{text-align:center; font-size:0.22rem; color:#4b4b4b; font-weight:bold;}
+
+.position {
+  position: fixed;
+  width: 3rem;
+  top: 50%;
+  margin-top: -6rem;
+  right: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.6rem 0.1rem;
+}
+
+.position p {
+  margin: 0.5rem 0;
+}
+
+.position img {
+  width: 2rem;
+}
+
+#copyVal {
+  background: transparent;
+  border: 0;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.weixin_mesg {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: -6rem;
+  margin-top: -5rem;
+  background: #fff;
+  display: none;
+  width: 50%;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.close1 {
+  width: 100%;
+  height: 1.6rem;
+}
+
+.scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.copyBtn {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.copyBtn:focus {
+  outline: 0;
+}
+.shadown {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #a09e9e;
+  opacity: 0.6;
+  display: none;
+}
+input[type="text"],
+textarea {
+  font: 14px normal normal uppercase helvetica, arial, serif;
+  color: #7c7873;
+  background: none;
+  width: 95%;
+  height: 36px;
+  padding: 0px 10px;
+  margin: 0 0 10px 0;
+  border: 1px solid #f8f5f1;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 0px 0px 1px #726959;
+  -webkit-box-shadow: inset 0px 0px 1px #b3a895;
+  box-shadow: inset 0px 0px 1px #b3a895;
+}
+
+
+.lfooter {
+
+	width:100%;
+
+	height: 3.5rem;
+
+	background-color: #f35a38;
+
+	position: sticky;
+
+	bottom: 0px;
+	
+	opacity: 0.9;
+
+}
+
+.lfooter ul li {
+
+	width: 50%;
+
+	height: auto;
+
+	float: left;
+
+	text-align: center;
+
+	padding: 6px 0px;
+
+}
+
+.lfooter ul li a {
+
+	color: #FFF;
+
+	line-height: 6px;
+
+
+}
+
+#wxnr {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	display: none;
+	background: rgba(0,0,0,.6);
+}
+#wxnr .nrdf {
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	width: 15rem;
+	height: 15rem;
+	padding: 0.3rem;
+	padding-top: 0.6rem;
+	margin-top: -2.5rem;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 2px 6px #777;
+	-webkit-box-shadow: 0px 2px 6px #777;
+	-moz-box-shadow: 0px 2px 6px #777;
+	border-radius: 10px;
+}
+#wxnr img {
+	width: 8rem;
+	height: 8rem;
+	display: block;
+	margin: 0.2rem auto;
+}
+#wxnr p {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+#wxnr i {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 1rem;
+	height: 1rem;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-style: normal;
+	background: #333;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+#wxnr span {
+	display: inline-block;
+	padding: 0.03rem 0.1rem;
+	line-height: 1.2rem;
+	background-color: #fb7a5d;
+	color: #fff;
+	border-radius: 0.05rem;
+	cursor: pointer;
+}
+#wxnr span.wx {
+	padding-left: 1rem;
+	background-image: url(../images/wx.png);
+	background-size: 1rem;
+	background-position: 0.1rem center;
+	background-repeat: no-repeat;
+}
+/*复制提示*/
+#weixin {
+	position: fixed;
+	top: 50%;
+	margin-top: -0.4rem;
+	z-index: 9999999;
+	font-size: 0.8rem;
+	color: #fff;
+	width: 90%;
+	right: 5%;
+	line-height: 1.5rem;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	border: 2px solid #333;
+	border-radius: 0.1rem;
+	display: none;
+}
+
+
+
+
+
+
+ 
